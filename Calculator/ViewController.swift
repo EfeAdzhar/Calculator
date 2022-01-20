@@ -5,6 +5,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    //MARK: Variables
     var numberOnScreen : Double = 0
     var previousNumber : Double = 0
     var operations = 0
@@ -15,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         self.view.backgroundColor = .black
-            super.viewDidLoad()
+        super.viewDidLoad()
     }
     
     //MARK: BRUH MOMENT. I tried to make button titles bigger, but they only do get bigger when you actually press them XD
@@ -74,7 +75,7 @@ class ViewController: UIViewController {
                 label.text = String(previousNumber + numberOnScreen)
             }
         }
-        
+        //MARK: If Person Pressed AC
         else if sender.tag == 10 {
             label.text = ""
             previousNumber = 0
